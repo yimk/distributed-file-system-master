@@ -1,0 +1,22 @@
+Configuring use-haskell-api-0.1.0.0...
+Preprocessing library use-haskell-api-0.1.0.0...
+[1 of 3] Compiling UseHaskellAPI    ( src/UseHaskellAPI.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.24.0.0/build/UseHaskellAPI.o )
+[2 of 3] Compiling UseHaskellAPIClient ( src/UseHaskellAPIClient.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.24.0.0/build/UseHaskellAPIClient.o )
+
+src/UseHaskellAPIClient.hs:31:1: error:
+    • Couldn't match type ‘http-client-0.4.31.2:Network.HTTP.Client.Types.Manager
+                           -> BaseUrl -> ClientM ResponseData’
+                     with ‘transformers-0.5.2.0:Control.Monad.Trans.Except.ExceptT
+                             ServantError IO ResponseData’
+      Expected type: Maybe String -> ClientM ResponseData
+        Actual type: Maybe [Char]
+                     -> http-client-0.4.31.2:Network.HTTP.Client.Types.Manager
+                     -> BaseUrl
+                     -> ClientM ResponseData
+    • When checking that the inferred type
+        loadEnvVars :: Maybe [Char]
+                       -> http-client-0.4.31.2:Network.HTTP.Client.Types.Manager
+                       -> BaseUrl
+                       -> ClientM ResponseData
+      is as general as its signature
+        loadEnvVars :: Maybe String -> ClientM ResponseData

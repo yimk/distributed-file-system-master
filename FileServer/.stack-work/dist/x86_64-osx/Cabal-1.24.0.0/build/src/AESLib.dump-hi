@@ -1,0 +1,71 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-29 20:25:16.309358 UTC
+
+interface use-haskell-0.1.0.0-Ha3px1fvAoFARkQJQj4W7k:AESLib 8001
+  interface hash: ecb2213da4da2bf931497580358a6117
+  ABI hash: 3ceb1a1ac1049f9c6ed2fee93bfe6a33
+  export-list hash: 9b95dc908ce99671f2ab0e7348025147
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b849377b70fac31bf01dcaf6d5be1aa9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  AESLib.decryption
+  AESLib.encryption
+  AESLib.keygenerator
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+7a7c2a0b982047c34237d4b5867b64ea
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   AESLib.$trModule2
+                   AESLib.$trModule1) -}
+30507213819eb7f885cc8f556d5bf5b0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AESLib"#) -}
+9f85c05ea8b944d98dee1c66bee7ef3a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "use-haskell-0.1.0.0-Ha3px1fvAoFARkQJQj4W7k"#) -}
+31745ff884a06fd4b530e118c6271d69
+  decryption :: a -> GHC.Base.String -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (str :: a) (key :: GHC.Base.String) -> str) -}
+3413b13589256caf931fe17a943b0b26
+  encryption :: a -> GHC.Base.String -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (str :: a) (key :: GHC.Base.String) -> str) -}
+1223581755b209a4eea3bb290026054a
+  keygenerator :: (GHC.Base.String, GHC.Base.String)
+  {- Strictness: m,
+     Unfolding: ((AESLib.keygenerator2, AESLib.keygenerator1)) -}
+ce8bd899aeeee096c9b1f00e1d0e5868
+  keygenerator1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tmp_pvk"#) -}
+7ac662fe69c96966b98c2af4d26f4a3d
+  keygenerator2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tmp_pbk"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
