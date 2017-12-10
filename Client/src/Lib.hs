@@ -489,17 +489,6 @@ insertDirectoryToCache fname (d:ds) = do
 
 ----------------------------------method-------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
 -- | The options handling
 
 -- First we invoke the options on the entry point.
